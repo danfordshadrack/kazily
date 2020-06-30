@@ -2,7 +2,7 @@ import dash
 import dash_table
 import pandas as pd
 
-df = pd.read_csv('tweet-gigs.csv')
+df = pd.read_csv('gigs.csv')
 
 app = dash.Dash(__name__)
 
