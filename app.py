@@ -6,6 +6,8 @@ df = pd.read_csv('gigs.csv')
 
 app = dash.Dash(__name__)
 
+server = app.server
+
 app.layout = dash_table.DataTable(
     id='table',
     columns=[{"name": i, "id": i} for i in df.columns],
